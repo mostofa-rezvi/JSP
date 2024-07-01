@@ -30,7 +30,7 @@
                 <td>${e.getAddress()}</td>
                 <td>
                     <a href="#">Edit</a>
-                    <a href="#">Delete</a>
+                    <a href="deleteemployee.jsp?id=${e.getId()}">Delete</a>
                 </td>
             </tr>
 

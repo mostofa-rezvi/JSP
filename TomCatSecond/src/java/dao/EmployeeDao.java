@@ -81,4 +81,24 @@ public class EmployeeDao {
         
         return emList;
     }
+    
+    public static void deleteEmployee(Employee e){
+        
+        sql = "delete from employee where id=?";
+        
+        try {
+            ps = DbUtil.getCon().prepareStatement(sql);
+            
+            ps.setInt(1, e.getId());
+            
+            ps.executeUpdate();
+            
+            ps.close();
+            DbUtil.getCon().close();
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(EmployeeDao.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
 }
