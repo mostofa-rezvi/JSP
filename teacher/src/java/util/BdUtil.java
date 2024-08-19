@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 public class BdUtil {
 
-    private static String url = "jdbc:mysql://localhost:3306/teacher";
+    private static String url = "jdbc:mysql://localhost:3306/dbcrud";
     private static String user = "root";
     private static String password = "jee59";
     private static String driver = "com.mysql.cj.jdbc.Driver";
